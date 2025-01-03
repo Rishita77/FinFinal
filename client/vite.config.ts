@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client/src"), // Alias for `src/` directory
+      "@": path.resolve(__dirname, "./src"), // Alias for `src/` directory
     },
   },
   base: "./", // Use relative paths for assets
