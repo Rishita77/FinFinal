@@ -15,7 +15,7 @@ export default defineConfig({
     outDir: "../dist", // Output directory for production build
     emptyOutDir: true, // Clear output directory before building
     rollupOptions: {
-      input: path.resolve(__dirname, "client/index.html"), // Entry HTML file
+      input: path.resolve(__dirname, "index.html"), // Entry HTML file
     },
   },
 });
