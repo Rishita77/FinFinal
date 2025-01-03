@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { GoogleGenerativeAI, GenerativeModel } from '@google/generative-ai';
-import { div } from 'framer-motion/client';
 
 // Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
