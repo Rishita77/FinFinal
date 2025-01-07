@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { TrendingUp, MessageSquare, TrendingUpIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button, } from './ui/button';
-import { Dialog, DialogFooter, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { CheckCircle, XCircle, X } from 'lucide-react';
 
 type Topic = {
@@ -481,7 +481,7 @@ const QuizModal: React.FC<QuizModalProps> = ({ isOpen, onClose, topic, onQuizCom
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [_, setIsCorrect] = useState<boolean | null>(null);
 
   const questions: Question[] = quizzes[topic.name] || [];
 

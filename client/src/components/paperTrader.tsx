@@ -13,7 +13,7 @@ export default function PaperTrader() {
   const [shares, setShares] = useState(0);
   const [cash, setCash] = useState(10000);
   const [portfolio, setPortfolio] = useState<Portfolio>({});
-  const [loading, setLoading] = useState(false);
+  const [_, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [showChart, setShowChart] = useState(false);
 
